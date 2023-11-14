@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BLB Home</title>
+  <style>
+    /* CSS to style the buttons */
+    .button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+      margin: 10px;
+      transition: background-color 0.3s;
+    }
+    
+    /* Button color classes */
+    .red { background-color: #FF005D; }
+    .yellow { background-color: #06B0D6; }
+    .blue { background-color: #009688; }
+    .purple { background-color: #FEC000; }
+    
+    /* Dark mode styles */
+    body.dark-mode {
+      background: #262626;
+    }
+    .button.dark-mode {
+      color: white;
+    }
+  </style>
+</head>
+<body class="dark-mode">
+  <!-- Dark mode button -->
+  <button id="dark-mode-button" class="button yellow">Dark Mode</button>
+  
+  <!-- Buttons with links -->
+  <a href="https://student.nis-blb.com/#/subjects" class="button red" target="_blank">Subjects</a>
+  <a href="https://student.nis-blb.com/#/leaderboard/1/1" class="button yellow" target="_blank">Leaderboard</a>
+  <a href="https://student.nis-blb.com/#/timetable" class="button blue" target="_blank">Schedule</a>
+  <a href="https://student.nis-blb.com/#/login" class="button purple" target="_blank">Logout</a>
+
+  <script>
+    // JavaScript for dark mode button functionality
+    const darkModeButton = document.getElementById("dark-mode-button");
+    darkModeButton.addEventListener("click", function() {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
+</body>
+</html>
