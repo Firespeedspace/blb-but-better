@@ -1,1 +1,1 @@
-# blb-but-better
+# blb-but-better.github.io
